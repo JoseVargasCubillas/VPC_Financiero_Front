@@ -64,11 +64,11 @@ const Formulario = () => {
 
                 <div className="mb-5">
                     <label htmlFor="mascota" className="uppercase text-gray-700 font-bold">Nombre del paciente</label>
-                    <input type="text" name="mascota" id="mascota" placeholder="Nombre de la mascota" className="border-2 w-full p-3 mt-2 placeholder-gray-400 rounded-xl" value={nombre} onChange={e => setNombre(e.target.value)} />
+                    <input type="text" name="mascota" id="mascota" placeholder="Nombre del paciente" className="border-2 w-full p-3 mt-2 placeholder-gray-400 rounded-xl" value={nombre} onChange={e => setNombre(e.target.value)} />
                 </div>
                 <div className="mb-5">
-                    <label htmlFor="numero de telefono" className="uppercase text-gray-700 font-bold">Numero de Telefono</label>
-                    <input type="number" name="numero" id="numero" placeholder="numero" className="border-2 w-full p-3 mt-2 placeholder-gray-400 rounded-xl" value={propietario} onChange={e => setPropietario(e.target.value)} />
+                    <label htmlFor="propietario" className="uppercase text-gray-700 font-bold">Numero de telefono</label>
+                    <input type="number" name="propietario" id="propietario" placeholder="Nombre de telefono" className="border-2 w-full p-3 mt-2 placeholder-gray-400 rounded-xl" value={propietario} onChange={e => setPropietario(e.target.value)} />
                 </div>
                 <div className="mb-5">
                     <label htmlFor="email" className="uppercase text-gray-700 font-bold">Email</label>

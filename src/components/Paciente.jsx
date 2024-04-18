@@ -2,7 +2,7 @@ import usePacientes from "../hooks/usePacientes";
 
 const Paciente = ({ paciente }) => {
     // Props
-    const { nombre, telefono, email, fecha, sintomas, _id } = paciente;
+    const { nombre, propietario, email, fecha, sintomas, _id } = paciente;
 
     // Context
     const { setEdicion, eliminarPaciente } = usePacientes()
@@ -10,7 +10,7 @@ const Paciente = ({ paciente }) => {
     return (
         <div className="m-10 bg-white border shadow-lg rounded-xl py-10 px-5">
             <p className="font-bold uppercase text-xl mb-4">{nombre}</p>
-            <p className="font-bold uppercase text-indigo-700 mb-2">Numero de Telefono: <span className="font-normal normal-case text-black">{telefono}</span></p>
+            <p className="font-bold uppercase text-indigo-700 mb-2">Numero de telefono: <span className="font-normal normal-case text-black">{propietario}</span></p>
             <p className="font-bold uppercase text-indigo-700 mb-2">Email de contacto: <span className="font-normal normal-case text-black">{email}</span></p>
             <p className="font-bold uppercase text-indigo-700 mb-2">Fecha de alta: <span className="font-normal normal-case text-black">{fecha.split('T')[0]}</span></p>
             <p className="font-bold uppercase text-indigo-700">Síntomas: <span className="font-normal normal-case text-black">{sintomas}</span></p>
